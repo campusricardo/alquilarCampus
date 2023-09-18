@@ -17,23 +17,19 @@ const alquiler = Schema({
 	Fecha_Inicio: {
 		type: Date,
 		require: true,
-		trim: true,
 	},
 	Fecha_Fin: {
 		type: Date,
 		require: true,
-		trim: true,
 	},
 	Costo_Total: {
 		type: Number,
 		require: true,
-		trim: true,
 	},
 	Estado: {
 		type: Boolean,
 		default: true,
 		require: true,
-		trim: true,
 	},
 });
 

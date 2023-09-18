@@ -17,25 +17,23 @@ const reserva = new Schema({
 	Fecha_Reserva: {
 		type: Date,
 		require: true,
-		trim: true,
+		default: Date.now
 	},
 	Fecha_Inicio: {
 		type: Date,
 		require: true,
-		trim: true,
 	},
 	Fecha_Fin: {
 		type: Date,
 		require: true,
-		trim: true,
 	},
 	Estado: {
 		type: Boolean,
 		require: true,
-		trim: true,
 		default: true,
-	},
+	}
 });
 
 const Reserva = model("reservas", reserva);
+
 module.exports = Reserva;

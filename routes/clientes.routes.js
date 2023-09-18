@@ -6,6 +6,7 @@ const { validateJWT } = require('../middlewares/validate.JWT.js');
 const { existEmail } = require('../helpers/db.validator.js');
 const router = Router();
 router.get("/clientes", showClientes);
+
 router.post("/clientes",[
     check("Nombre", 'El nombre debe ser un String').isString(),
     check("Nombre", 'No esta el nombre').not().isEmpty(),
