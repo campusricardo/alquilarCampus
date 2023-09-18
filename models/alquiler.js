@@ -1,4 +1,5 @@
-import { Schema, model } from "mongoose";
+const { Schema, model }  = require("mongoose");
+
 
 const alquiler = Schema({
 	ID_Cliente: {
@@ -37,4 +38,4 @@ const alquiler = Schema({
 });
 
 const Alquiler = model("alquileres", alquiler);
-export default Alquiler;
+module.exports =  Alquiler;

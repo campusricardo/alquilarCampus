@@ -1,4 +1,5 @@
-import { Schema, model } from "mongoose";
+const { Schema, model }  = require("mongoose");
+
 
 const automovil = new Schema({
 	Marca: {
@@ -34,4 +35,4 @@ const automovil = new Schema({
 });
 const Automovil = model("automoviles", automovil);
 
-export default Automovil;
+module.exports = Automovil;

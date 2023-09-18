@@ -1,4 +1,5 @@
-import { Schema, model } from "mongoose";
+const { Schema, model }  = require("mongoose");
+
 
 const sucursalAutomovil = new Schema({
 	ID_Sucursal: {
@@ -17,9 +18,10 @@ const sucursalAutomovil = new Schema({
 		type: Number,
 		required: true,
 		trim: true,
-		default: 1,
+		default: 0,
 	},
 });
 
 const SucursalAutomovil = model("sucursal_automoviles", sucursalAutomovil);
-export default SucursalAutomovil;
+
+module.exports = SucursalAutomovil;

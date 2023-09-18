@@ -1,4 +1,5 @@
-import { Schema, model } from "mongoose";
+const { Schema, model }  = require("mongoose");
+
 
 const sucursal = new Schema({
   Nombre: {
@@ -19,4 +20,4 @@ const sucursal = new Schema({
 });
 
 const Sucursal = model("sucursales", sucursal);
-export default Sucursal;
+module.exports = Sucursal;

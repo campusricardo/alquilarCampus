@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+const { Schema, model }  = require("mongoose");
 
 const cliente = new Schema({
 	Nombre: {
@@ -12,7 +12,7 @@ const cliente = new Schema({
 		trim: true,
 	},
 	DNI: {
-		type: Number,
+		type: String,
 		required: true,
 		trim: true,
 	},
@@ -34,4 +34,5 @@ const cliente = new Schema({
 });
 
 const Cliente = model("clientes", cliente);
-export default Cliente;
+
+module.exports = Cliente;

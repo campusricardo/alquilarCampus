@@ -1,4 +1,5 @@
-import { Schema, model } from "mongoose";
+const { Schema, model }  = require("mongoose");
+
 
 const reserva = new Schema({
 	ID_Cliente: {
@@ -37,4 +38,4 @@ const reserva = new Schema({
 });
 
 const Reserva = model("reservas", reserva);
-export default Reserva;
+module.exports = Reserva;

@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+const { Schema, model }  = require("mongoose");
 
 const registroEntrega = new Schema({
 	ID_Alquiler: {
@@ -30,4 +30,4 @@ const registroEntrega = new Schema({
 	},
 });
 const RegistroEntrega = model("registro_entrega", registroEntrega, "registro_entrega");
-export default RegistroEntrega;
+module.exports = RegistroEntrega;
